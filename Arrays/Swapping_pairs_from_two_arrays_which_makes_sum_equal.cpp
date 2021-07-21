@@ -1,3 +1,20 @@
+/*
+
+Let there be two arrays:
+A = a1, a2, ... an
+B = b1, b2,     bn
+
+Let's say pair will be (a, b) from array A and B respectively.
+
+then:
+sumA + b - a = sumB + a - b
+
+b - a = (sumB - sumA)/2;
+
+Now just need to check if there exists two elements having difference ((sumB - sumA)/2).
+
+*/
+
 int findSwapValues(int A[], int n, int B[], int m)
 {
 	    unordered_map<int, int>hash_map;
